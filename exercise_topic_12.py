@@ -206,6 +206,7 @@ def main():
         command, args = parse_input(user_input)
 
         if command in ["close", "exit"]:
+            save_data(book)
             print("Good bye!")
             break
         elif command == "hello":
@@ -229,3 +230,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
